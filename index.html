@@ -5,32 +5,421 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kihyun Kim – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Kihyun Kim</h1>
-    <p>Machine Learning & Computer Vision Researcher</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p> Postgraduate (MEng) Imperial College London</p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>AI PET NOVA</strong> – Group Consultancy Project in collaboration with IBM</li>
-        <li><strong>MARS AUTONOMOUS ROVER</strong> – Mars Autonomous Rover project</li>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">KK</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:yoo07220@gmail.com">yoo07220@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Kihyun11">Kihyun11</a></p>
-    </section>
-  </main>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Kihyun Kim</h1>
+      <h2 class="hero-title">Machine Learning &amp; Computer Vision Researcher</h2>
+      <p class="hero-sub">MEng Electrical &amp; Information Engineering · Imperial College London<br/>Research Scientist · ROK Army Training &amp; Doctrine Command</p>
+      <div class="hero-links">
+        <a href="mailto:yoo07220@gmail.com" class="btn btn-primary">Get in Touch</a>
+        <a href="https://github.com/Kihyun11" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:yoo07220@gmail.com" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+        <a href="https://github.com/Kihyun11" target="_blank" rel="noopener" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kihyun-kim" target="_blank" rel="noopener" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Machine Learning and Computer Vision researcher with a MEng in Electrical and Information Engineering from <strong>Imperial College London</strong>. My research focuses on <strong>tiny object detection</strong> in aerial images, where I've designed novel attention mechanisms to push the boundaries of what modern CNN-based detectors can achieve.</p>
+          <p>Currently serving as a <strong>Research Scientist</strong> at the ROK Army Training &amp; Doctrine Command, I developed the Zoom-Attention and TODAM modules — integrated into a CNN architecture that surpassed YOLOv8 and CBAM-based baselines. This work is under review for <strong>ICASSP 2026</strong>.</p>
+          <p>I'm passionate about applying AI to real-world problems, from drone-based surveillance to autonomous robotics and AI companions.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Publication</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Awards</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">ICL</span>
+            <span class="stat-label">MEng Graduate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Imperial College London</h3>
+              <span class="timeline-date">Oct 2020 – July 2024</span>
+            </div>
+            <p class="timeline-subtitle">MEng in Electrical and Information Engineering · London, United Kingdom</p>
+            <ul>
+              <li>GPA: 2:1 (Upper Second Class Honors)</li>
+              <li><strong>Core Modules:</strong> Machine Learning, Deep Learning, Computer Vision</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Republic of Korea Army (ROK Army)</h3>
+              <span class="timeline-date">Jan 2025 – Present</span>
+            </div>
+            <p class="timeline-subtitle">Research Scientist – Training &amp; Doctrine Command · Daejeon, South Korea</p>
+            <ul>
+              <li>Developed two novel attention modules — <strong>Zoom-Attention</strong> and the <strong>Tiny Object Detection Attention Module (TODAM)</strong> — to enhance the detection performance of the AI model attached to surveillance drones.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Alpha Scan Display</h3>
+              <span class="timeline-date">June 2018 – Aug 2018</span>
+            </div>
+            <p class="timeline-subtitle">Intern – Strategy Planning Team · Seoul, South Korea</p>
+            <ul>
+              <li>Provided data visualization using the MATLAB plot library in Python.</li>
+              <li>Analysed consumer purchasing trends for gaming monitors around e-sports events using a Python web scraper; monitored a <strong>17% increase</strong> in product purchasing.</li>
+              <li>Performed data cleaning on online survey data using Python to enable effective data processing.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Apr 2025 – Sept 2025</span>
+              <span class="project-tag">Deep Learning</span>
+            </div>
+            <a href="https://github.com/Kihyun11/ZoomAtt-TODAMNet" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>ZoomAtt-TODAM Network</h3>
+          <p>Designed two novel attention modules — <strong>Zoom-Attention</strong> and <strong>TODAM</strong> — to enhance tiny object detection in CNN-based detectors. Developed <strong>ZoomAtt-TODAMNet</strong> which surpassed both YOLOv8 and CBAM-integrated baselines.</p>
+          <ul class="project-highlights">
+            <li>+0.49% mAP@50, +2.7% mAP@50:95, +3.81% Recall over CBAM baseline</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span><span>PyTorch</span><span>YOLOv8</span><span>OpenMMLab</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Oct 2023 – July 2025</span>
+              <span class="project-tag">Deep Learning</span>
+            </div>
+            <a href="https://github.com/Kihyun11/MoonNet" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>MoonNet – Mixture of Orthogonal Neural-modules Network</h3>
+          <p>Enhanced tiny object detection using YOLOv8 on a modified DOTA-v2.0 dataset (avg object pixel size ≈ 968 px²). Designed a custom backbone integrating <strong>SE Block</strong> and <strong>CBAM</strong> with increased channel capacity.</p>
+          <ul class="project-highlights">
+            <li>+27.0% mAP@50 and +26.7% mAP@50:95 over baseline</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span><span>YOLOv8</span><span>CBAM</span><span>SE Block</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">May 2023 – July 2023</span>
+              <span class="project-tag">AI / Robotics</span>
+            </div>
+            <a href="https://github.com/Kihyun11/AI-PET-NOVA" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>AI Pet NOVA</h3>
+          <p>Designed an AI pet named NOVA in collaboration with IBM, using Watson Assistant to handle multi-state conversations: listening, replying, and seek-attention states. Won <strong>1st place</strong> at the Imperial College London Group Consultancy Project.</p>
+          <div class="tech-stack">
+            <span>Python</span><span>Raspberry Pi</span><span>IBM Watson</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">May 2022 – July 2022</span>
+              <span class="project-tag">Computer Vision</span>
+            </div>
+            <a href="https://github.com/Kihyun11/MARS-ROVER" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>Mars Autonomous Rover</h3>
+          <p>Designed an autonomous rover to detect and collect positional data of colored objects and map a given area. Implemented HSV color conversion for object detection and handled pixel-space calculations with data transfer through registers.</p>
+          <div class="tech-stack">
+            <span>Verilog</span><span>C</span><span>HTML</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Oct 2021 – Dec 2021</span>
+              <span class="project-tag">Hardware</span>
+            </div>
+            <a href="https://github.com/Kihyun11/MIPS-CPU" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>MIPS-CPU</h3>
+          <p>Designed a MIPS CPU in Verilog that performs 48 instructions. Constructed the Register component to read and write based on specific R-type instruction opcodes and function codes.</p>
+          <div class="tech-stack">
+            <span>Verilog</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <div class="pub-list">
+        <div class="pub-card">
+          <div class="pub-badge">Under Review · ICASSP 2026</div>
+          <h3 class="pub-title">Enhanced Detection of Tiny Objects in Aerial Images</h3>
+          <p class="pub-authors"><strong>Kihyun Kim</strong>, Michalis Lazarou, Tania Stathaki</p>
+          <p class="pub-venue">Preprint available at arXiv:2509.17078 · May 2026</p>
+          <a href="https://arxiv.org/abs/2509.17078" target="_blank" rel="noopener" class="pub-link">View on arXiv →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>C++</span>
+            <span>Verilog</span>
+            <span>C</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Deep Learning</h3>
+          <div class="skill-tags">
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>OpenMMLab</span>
+            <span>YOLOv8</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Research Areas</h3>
+          <div class="skill-tags">
+            <span>Object Detection</span>
+            <span>Computer Vision</span>
+            <span>Attention Mechanisms</span>
+            <span>Aerial Imaging</span>
+            <span>CNN Architectures</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Tools &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span>MATLAB</span>
+            <span>IBM Watson</span>
+            <span>Raspberry Pi</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards" class="section">
+    <div class="container">
+      <h2 class="section-title">Awards &amp; Honours</h2>
+      <div class="awards-list">
+        <div class="award-card">
+          <div class="award-icon">🏅</div>
+          <div class="award-body">
+            <div class="award-header">
+              <h3>Commendation from the Commander (Lieutenant General), ROK Army</h3>
+              <span class="award-date">Sept 2025</span>
+            </div>
+            <p>Awarded for excellence in AI research and contribution to scientific training enhancement through the development of ZoomAtt-TODAMNet during military service.</p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon">🥇</div>
+          <div class="award-body">
+            <div class="award-header">
+              <h3>Imperial College London Group Consultancy Project – 1st Place</h3>
+              <span class="award-date">July 2023</span>
+            </div>
+            <p>Nominated as the 1st place winner of the ICL Group Consultancy Project with AI Pet NOVA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracurricular -->
+  <section id="extra" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Extracurricular</h2>
+      <div class="extra-list">
+        <div class="extra-item">
+          <span class="extra-name">Imperial College London Judo Club</span>
+          <span class="extra-date">2021 – 2024</span>
+        </div>
+        <div class="extra-item">
+          <span class="extra-name">HS &amp; MS Rugby Squad</span>
+          <span class="extra-date">2015 – 2019</span>
+        </div>
+        <div class="extra-item">
+          <span class="extra-name">3rd Place – Rugby, National Sports Championship (Republic of Korea)</span>
+          <span class="extra-date">2016</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-desc">I'm currently open to research collaborations and new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+      <a href="mailto:yoo07220@gmail.com" class="btn btn-primary btn-large">Say Hello</a>
+      <div class="contact-details">
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          <a href="mailto:yoo07220@gmail.com">yoo07220@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <a href="https://github.com/Kihyun11" target="_blank" rel="noopener">github.com/Kihyun11</a>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Seoul, South Korea</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Kihyun Kim</strong></p>
+    <p class="footer-sub">© 2025 · yoo07220@gmail.com</p>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Intersection observer for fade-in animations
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.timeline-item, .project-card, .pub-card, .award-card, .skills-group').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
 </body>
 </html>
