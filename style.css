@@ -162,12 +162,7 @@ a:hover { color: #7ab0ff; }
 }
 
 .photo-bottom .profile-circle:last-child {
-  object-position: center 10%;
-  transform: rotate(-3deg);
-}
-
-.photo-bottom .profile-circle:last-child:hover {
-  transform: rotate(-3deg) scale(1.05);
+  object-position: center 15%;
 }
 
 .hero-name {
