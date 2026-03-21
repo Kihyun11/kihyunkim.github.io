@@ -132,14 +132,42 @@ a:hover { color: #7ab0ff; }
   flex-shrink: 0;
 }
 
-.profile-photo {
-  width: 340px;
-  height: 420px;
-  border-radius: 12px;
+.photo-triangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.photo-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profile-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  border: 2px solid var(--border);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.profile-circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 36px var(--accent-glow);
+}
+
+.photo-bottom .profile-circle:last-child {
+  object-position: center 10%;
+  transform: rotate(-3deg);
+}
+
+.photo-bottom .profile-circle:last-child:hover {
+  transform: rotate(-3deg) scale(1.05);
 }
 
 .hero-name {
@@ -815,9 +843,9 @@ footer strong { color: var(--text-muted); }
     text-align: center;
   }
 
-  .profile-photo {
-    width: 240px;
-    height: 300px;
+  .profile-circle {
+    width: 120px;
+    height: 120px;
   }
 
   .hero-details {
