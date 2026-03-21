@@ -161,9 +161,6 @@ a:hover { color: #7ab0ff; }
   box-shadow: 0 0 36px var(--accent-glow);
 }
 
-.photo-bottom .profile-circle:last-child {
-  object-position: center 15%;
-}
 
 .institution-logos {
   display: flex;
