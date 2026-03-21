@@ -147,7 +147,7 @@ a:hover { color: #7ab0ff; }
 
 .profile-circle {
   width: 160px;
-  height: 160px;
+  height: 210px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -840,7 +840,7 @@ footer strong { color: var(--text-muted); }
 
   .profile-circle {
     width: 120px;
-    height: 120px;
+    height: 158px;
   }
 
   .hero-details {
