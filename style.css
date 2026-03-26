@@ -614,6 +614,58 @@ a:hover { color: #7ab0ff; }
   font-family: var(--mono);
 }
 
+/* =============================================
+   LIGHTBOX
+   ============================================= */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.88);
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.7);
+  object-fit: contain;
+  cursor: default;
+}
+
+#lightbox-caption {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.85rem;
+  font-family: var(--mono);
+  pointer-events: none;
+}
+
+#lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 28px;
+  color: rgba(255,255,255,0.8);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+}
+#lightbox-close:hover { color: #fff; }
+
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
