@@ -27,6 +27,21 @@
   --transition: 0.25s ease;
 }
 
+body.light-mode {
+  --bg: #f5f7fa;
+  --bg-alt: #eef1f6;
+  --surface: #ffffff;
+  --surface-hover: #e8edf5;
+  --border: #d0d8e8;
+  --accent: #2563eb;
+  --accent-dim: rgba(37, 99, 235, 0.1);
+  --accent-glow: rgba(37, 99, 235, 0.2);
+  --text: #1a202c;
+  --text-muted: #4a5568;
+  --text-dim: #a0aec0;
+  --shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
@@ -68,6 +83,30 @@ a:hover { color: #7ab0ff; }
   border-bottom: 1px solid var(--border);
   padding: 12px 0;
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+body.light-mode #navbar.scrolled {
+  background: rgba(245, 247, 250, 0.92);
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+#theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .nav-inner {

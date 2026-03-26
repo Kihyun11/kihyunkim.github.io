@@ -22,6 +22,10 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">☀️</span>
+        <span id="theme-label">Light</span>
+      </button>
     </div>
   </nav>
 
@@ -549,6 +553,26 @@
   </footer>
 
   <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const themeLabel = document.getElementById('theme-label');
+
+    const applyTheme = (isLight) => {
+      document.body.classList.toggle('light-mode', isLight);
+      themeIcon.textContent = isLight ? '🌙' : '☀️';
+      themeLabel.textContent = isLight ? 'Dark' : 'Light';
+    };
+
+    const savedTheme = localStorage.getItem('theme');
+    applyTheme(savedTheme === 'light');
+
+    themeToggle.addEventListener('click', () => {
+      const isLight = !document.body.classList.contains('light-mode');
+      applyTheme(isLight);
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
