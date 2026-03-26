@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Kihyun Kim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">KK</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="projects.html" class="nav-active">Projects</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">☀️</span>
+        <span id="theme-label">Light</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Projects -->
+  <section id="projects" class="section" style="padding-top: 120px;">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Apr 2025 – Sept 2025</span>
+              <span class="project-tag">Deep Learning</span>
+            </div>
+            <a href="https://github.com/Kihyun11/ZoomAtt-TODAMNet" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>ZoomAtt-TODAM Network</h3>
+          <p>Designed two novel attention modules — <strong>Zoom-Attention</strong> and <strong>TODAM</strong> — to enhance tiny object detection in CNN-based detectors. Developed <strong>ZoomAtt-TODAMNet</strong> which surpassed both YOLOv8 and CBAM-integrated baselines.</p>
+          <ul class="project-highlights">
+            <li>+0.49% mAP@50, +2.7% mAP@50:95, +3.81% Recall over CBAM baseline</li>
+          </ul>
+          <div class="project-figures">
+            <figure>
+              <img src="figure/ZoomAtt-TODAM/zoomatt_module.png" alt="Zoom-Attention Module" loading="lazy" />
+              <figcaption>Zoom-Attention Module</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/ZoomAtt-TODAM/TODAM.png" alt="TODAM Module" loading="lazy" />
+              <figcaption>TODAM Module</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/ZoomAtt-TODAM/zoomatt_TODAMNet.png" alt="ZoomAtt-TODAMNet Architecture" loading="lazy" />
+              <figcaption>ZoomAtt-TODAMNet Architecture</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Python</span><span>PyTorch</span><span>YOLOv8</span><span>OpenMMLab</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Oct 2023 – July 2025</span>
+              <span class="project-tag">Deep Learning</span>
+            </div>
+            <a href="https://github.com/Kihyun11/MoonNet" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>MoonNet – Mixture of Orthogonal Neural-modules Network</h3>
+          <p>Enhanced tiny object detection using YOLOv8 on a modified DOTA-v2.0 dataset (avg object pixel size ≈ 968 px²). Designed a custom backbone integrating <strong>SE Block</strong> and <strong>CBAM</strong> with increased channel capacity.</p>
+          <ul class="project-highlights">
+            <li>+27.0% mAP@50 and +26.7% mAP@50:95 over baseline</li>
+          </ul>
+          <div class="project-figures">
+            <figure>
+              <img src="figure/MoonNet/MoonNet_backbone.png" alt="MoonNet Backbone Architecture" loading="lazy" />
+              <figcaption>MoonNet Backbone Architecture</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/MoonNet/backbone_designs.png" alt="Backbone Design Variants" loading="lazy" />
+              <figcaption>Backbone Design Variants</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/MoonNet/DOTA_modification.png" alt="DOTA Dataset Modification" loading="lazy" />
+              <figcaption>DOTA Dataset Modification</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Python</span><span>YOLOv8</span><span>CBAM</span><span>SE Block</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">2025</span>
+              <span class="project-tag">Deep Learning / HAR</span>
+            </div>
+            <a href="https://github.com/Kihyun11/DeepMILES" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>DeepMILES – Deep Learning Model for Integrated Evaluation of Soldier-Specific Performance</h3>
+          <p>A deep learning framework for <strong>Human Activity Recognition (HAR)</strong> from IMU sensor data, designed to evaluate military-relevant tactical movements. Built on a <strong>DeepConvLSTM</strong> (CNN + LSTM hybrid) that classifies 6 soldier actions and extracts 128-dimensional embeddings for multi-metric motion quality scoring.</p>
+          <ul class="project-highlights">
+            <li>6-class tactical action recognition: prone, crawl, cover, kneeling shot, standby, walk</li>
+            <li>Multi-metric scoring: Form Similarity (50%), Temporal Consistency (30%), Embedding Smoothness (20%)</li>
+          </ul>
+          <div class="project-figures">
+            <figure>
+              <img src="https://raw.githubusercontent.com/Kihyun11/DeepMILES/main/figure/DeepMILES_framework.jpg" alt="DeepMILES Framework" loading="lazy" />
+              <figcaption>DeepMILES Pipeline</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Python</span><span>PyTorch</span><span>DeepConvLSTM</span><span>IMU Sensors</span><span>fastdtw</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">2025</span>
+              <span class="project-tag">LLM / NLP</span>
+            </div>
+            <a href="https://github.com/Kihyun11/TACTIC-L2L" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>TACTIC-L2L – Tactical LLM-to-LLM Battle Evaluation Framework</h3>
+          <p>A framework that pits two local language models against each other in a structured <strong>3-round wargame debate</strong> over fictional Korean military tactical scenarios. A GPT model serves as judge, scoring both sides across <strong>7 strategic criteria</strong> including logical consistency, COA quality, and adversarial reasoning.</p>
+          <ul class="project-highlights">
+            <li>3-round debate structure: independent analysis → cross-critique → final revised plan</li>
+            <li>Supports DeepSeek-R1, Phi-3.5-mini, Yi-1.5-9B, and Kanana-1.5-8B local models</li>
+          </ul>
+          <div class="project-figures">
+            <figure>
+              <img src="https://raw.githubusercontent.com/Kihyun11/TACTIC-L2L/main/figure/TACTIC-L2L%20framework.png" alt="TACTIC-L2L Framework" loading="lazy" />
+              <figcaption>TACTIC-L2L Framework</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Python</span><span>PyTorch</span><span>Transformers</span><span>OpenAI API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">May 2023 – July 2023</span>
+              <span class="project-tag">AI / Robotics</span>
+            </div>
+            <a href="https://github.com/Kihyun11/AI-PET-NOVA" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>AI Pet NOVA</h3>
+          <p>Designed an AI pet named NOVA in collaboration with IBM, using Watson Assistant to handle multi-state conversations: listening, replying, and seek-attention states. Won <strong>1st place</strong> at the Imperial College London Group Consultancy Project.</p>
+          <div class="project-figures">
+            <figure>
+              <img src="figure/AI-Pet-NOVA/nova_frame3.jpg" alt="NOVA Robot" loading="lazy" />
+              <figcaption>NOVA Robot</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/AI-Pet-NOVA/nova_poster.jpg" alt="Project Poster" loading="lazy" />
+              <figcaption>Project Poster</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/AI-Pet-NOVA/nova_leaflet_outside.jpg" alt="Leaflet (Outside)" loading="lazy" />
+              <figcaption>Leaflet (Outside)</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/AI-Pet-NOVA/nova_leaflet_inside.jpg" alt="Leaflet (Inside)" loading="lazy" />
+              <figcaption>Leaflet (Inside)</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Python</span><span>Raspberry Pi</span><span>IBM Watson</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">May 2022 – July 2022</span>
+              <span class="project-tag">Computer Vision</span>
+            </div>
+            <a href="https://github.com/Kihyun11/MARS-ROVER" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>Mars Autonomous Rover</h3>
+          <p>Designed an autonomous rover to detect and collect positional data of colored objects and map a given area. Implemented HSV color conversion for object detection and handled pixel-space calculations with data transfer through registers.</p>
+          <div class="project-figures">
+            <figure>
+              <img src="figure/Mars-Autonomous-Rover/mars_rover_pic.jpg" alt="Rover Hardware" loading="lazy" />
+              <figcaption>Rover Hardware</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/Mars-Autonomous-Rover/mars_rover_vision_design.jpg" alt="Vision System Design" loading="lazy" />
+              <figcaption>Vision System Design</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/Mars-Autonomous-Rover/mars_rover_alien.jpg" alt="Alien Detection Demo" loading="lazy" />
+              <figcaption>Alien Detection Demo</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Verilog</span><span>C</span><span>HTML</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Oct 2021 – Dec 2021</span>
+              <span class="project-tag">Hardware</span>
+            </div>
+            <a href="https://github.com/Kihyun11/MIPS-CPU" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+          <h3>MIPS-CPU</h3>
+          <p>Designed a MIPS CPU in Verilog that performs 48 instructions. Constructed the Register component to read and write based on specific R-type instruction opcodes and function codes.</p>
+          <div class="project-figures">
+            <figure>
+              <img src="figure/MIPS-CPU/mips_cpu.jpg" alt="CPU Design" loading="lazy" />
+              <figcaption>CPU Design</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/MIPS-CPU/mips_cpu_flowchart.jpg" alt="CPU Flowchart" loading="lazy" />
+              <figcaption>CPU Flowchart</figcaption>
+            </figure>
+            <figure>
+              <img src="figure/MIPS-CPU/quartus_analysis.jpg" alt="Quartus Analysis" loading="lazy" />
+              <figcaption>Quartus Analysis</figcaption>
+            </figure>
+          </div>
+          <div class="tech-stack">
+            <span>Verilog</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <span id="lightbox-caption"></span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Kihyun Kim</strong></p>
+    <p class="footer-sub">© 2025 · yoo07220@gmail.com</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const themeLabel = document.getElementById('theme-label');
+
+    const applyTheme = (isLight) => {
+      document.body.classList.toggle('light-mode', isLight);
+      themeIcon.textContent = isLight ? '🌙' : '☀️';
+      themeLabel.textContent = isLight ? 'Dark' : 'Light';
+    };
+
+    const savedTheme = localStorage.getItem('theme');
+    applyTheme(savedTheme === 'light');
+
+    themeToggle.addEventListener('click', () => {
+      const isLight = !document.body.classList.contains('light-mode');
+      applyTheme(isLight);
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Intersection observer for fade-in animations
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project-card').forEach(el => observer.observe(el));
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    document.querySelectorAll('.project-figures img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = img.closest('figure')?.querySelector('figcaption')?.textContent || '';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+
+</body>
+</html>
