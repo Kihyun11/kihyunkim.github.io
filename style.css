@@ -225,6 +225,12 @@ body.light-mode #navbar.scrolled {
   border-radius: 6px;
 }
 
+.mutual-light { display: none; }
+.mutual-dark  { display: inline-block; }
+
+body.light-mode .mutual-light { display: inline-block; }
+body.light-mode .mutual-dark  { display: none; }
+
 .hero-name {
   font-size: clamp(2.8rem, 5vw, 4.5rem);
   font-weight: 700;
