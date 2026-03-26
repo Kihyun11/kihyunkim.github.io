@@ -70,8 +70,7 @@
         <div class="institution-logos">
           <img src="figure/logo/Imperial_College_London_new_logo.png" alt="Imperial College London" class="inst-logo inst-logo-imperial" />
           <img src="figure/logo/IIFA_logo.png" alt="IIFA" class="inst-logo inst-logo-imperial" />
-          <img src="figure/logo/mutual_logo.png" alt="Mutual" class="inst-logo mutual-dark" />
-          <img src="figure/logo/mutual_logo_invert.jpg" alt="Mutual" class="inst-logo mutual-light" />
+          <img src="figure/logo/mutual_logo.png" alt="Mutual" class="inst-logo mutual-logo" id="mutual-logo" />
         </div>
       </div>
     </div>
@@ -330,10 +329,14 @@
     const themeIcon = document.getElementById('theme-icon');
     const themeLabel = document.getElementById('theme-label');
 
+    const mutualLogo = document.getElementById('mutual-logo');
     const applyTheme = (isLight) => {
       document.body.classList.toggle('light-mode', isLight);
       themeIcon.textContent = isLight ? '🌙' : '☀️';
       themeLabel.textContent = isLight ? 'Dark' : 'Light';
+      if (mutualLogo) mutualLogo.src = isLight
+        ? 'figure/logo/mutual_logo_invert.jpg'
+        : 'figure/logo/mutual_logo.png';
     };
 
     const savedTheme = localStorage.getItem('theme');
